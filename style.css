@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+    --background: #0f0f0f;
+    --white: #ffffff;
+    --gray: #404040;
+    --green: #34d399;
+    --blue: #5e5def;
+    --pink: #ec4899;
+    --orange: #f59e0b;
+    --purple: #8b5cf6;
+    --btn-shadow: 0px 2px 10px #ffffffa0;;
+}
+h1 {
+  font-size: 2.986rem;
+}
+h2 {
+  font-size: 2.488rem;
+}
+h3 {
+  font-size: 2.074rem;
+}
+h4 {
+  font-size: 1.728rem;
+}
+h5 {
+  font-size: 1.44rem;
+}
+h6 {
+  font-size: 1.2rem;
+}
+p {
+  font-size: 1rem;
+}
+small {
+  font-size: 0.833rem;
+}
+a {
+  font-size: 1rem;
+  text-decoration: none;
+}
+.col{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.row{
+  display: flex;
+  gap: 20px;
+}
+body{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: var(--background);
+    overflow-x: hidden;
+    color: var(--white);
+    font-family: robot;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.hero{
+  width: 100%;
+  padding: 60px;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.hero h2,
+.hero h3,
+.hero h1{
+  font-weight: bolder;
+}
+.hero .title{
+  gap: 0px;
+  scale: 1.05;
+}
+
+
+.hero .me{
+  width: 180px;
+  height: 48px;
+  border-radius: 24px;
+  background-color: var(--gray);
+  color: var(--white);
+  opacity: 0.9;
+  font-weight: bold;
+  margin-top: 5px;
+  box-shadow: var(--btn-shadow);
+  cursor: pointer;
+  transition: 1s ease;
+  overflow: hidden;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: none;
+}
+.hero .me p{
+  transition: 0.1s ease;
+  opacity: 1;
+  text-align: center;
+  width: 100%;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .me .apearAfter{
+  display: none;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+.hero .me .row{
+  display: none;
+}
+.hero .me:hover{
+  width: 740px;
+  height: 200px;
+  padding: 22px 30px;
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+
+/*
+.hero .me:hover p{
+  opacity: 0.8;
+  display: block;
+  width: 50%;
+}
+
+
+*/
+
+
+.hero img{
+  width: 1100px;
+  height: 1100px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -2;
+  mix-blend-mode: color-dodge;
+}
+.nav{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  padding: 0px 30px;
+  opacity: 0.8;
+}
+.nav .menu{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: bold;
+}
+.nav .menu #contact{
+  width: 100px;
+  height: 34px;
+  border-radius: 17px;
+  background-color: var(--gray);
+  box-shadow: var(--btn-shadow);
+  justify-content: center;
+}
